@@ -3,7 +3,7 @@ let row_size = 16;
 let grid_size = row_size * row_size;
 
 const onDivMouseEnter = function (e) {
-    e.target.style.backgroundColor = "red";
+    e.target.style.backgroundColor = "rgb(62, 70, 78)";
 }
 
 let current_row = document.createElement("div");
