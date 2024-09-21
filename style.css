@@ -26,6 +26,12 @@ body {
     flex-grow: 1;
 }
 
+#button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 h1 {
     padding: 0px;
     margin: 0px;

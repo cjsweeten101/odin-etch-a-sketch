@@ -13,6 +13,10 @@ const onGridChangeClick = function (e) {
     createGrid(current_row_size);
 }
 
+const onRefreshClick = function (e) {
+    deleteGrid();
+}
+
 const onDivMouseEnter = function (e) {
     e.target.style.backgroundColor = "rgb(62, 70, 78)";
 }
