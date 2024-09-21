@@ -5,7 +5,7 @@ const onGridChangeClick = function (e) {
     current_row_size = prompt("Enter a new size", current_row_size);
 
     while (current_row_size > 100) {
-        current_row_size = prompt("Sorry value too big, please enter another", new_row_size);
+        current_row_size = prompt("Sorry value too big, please enter another", current_row_size);
     }
     //first delete current grid
     deleteGrid();
@@ -15,6 +15,7 @@ const onGridChangeClick = function (e) {
 
 const onRefreshClick = function (e) {
     deleteGrid();
+    createGrid(current_row_size);
 }
 
 const onDivMouseEnter = function (e) {
