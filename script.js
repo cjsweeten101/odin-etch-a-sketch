@@ -26,6 +26,10 @@ const onRefreshClick = function (e) {
 const onDivMouseEnter = function (e) {
     //e.target.style.backgroundColor = "rgb(62, 70, 78)";
     e.target.style.backgroundColor = getRandomRGB();
+    let current_opacity = +e.target.style.getPropertyValue("opacity");
+    if ( current_opacity != 1 ) {
+        e.target.style.opacity = current_opacity + .10;
+    } 
 }
 
 const createGrid = function (row_size) {
