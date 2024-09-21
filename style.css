@@ -30,3 +30,11 @@ h1 {
     padding: 0px;
     margin: 0px;
 }
+
+button {
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: rgb(48, 48, 58) solid 1px;
+    background-color: lightslategray;
+    color: whitesmoke;
+}
