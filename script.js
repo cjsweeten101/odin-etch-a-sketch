@@ -19,7 +19,8 @@ const onRefreshClick = function (e) {
 }
 
 const onDivMouseEnter = function (e) {
-    e.target.style.backgroundColor = "rgb(62, 70, 78)";
+    //e.target.style.backgroundColor = "rgb(62, 70, 78)";
+    e.target.style.backgroundColor = getRandomRGB();
 }
 
 const createGrid = function (row_size) {
@@ -47,5 +48,15 @@ const deleteGrid = function () {
         rows[i].remove();
     }
 }
+
+const getRandomRGB = function () {
+    return `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)})`
+}
+
+const getRandomIntInclusive = function (min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+  }
 
 createGrid(current_row_size);
